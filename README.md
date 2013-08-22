@@ -5,10 +5,10 @@ For creating grid layouts depending on your specifications. Using a very dynamic
 
 example
 ---------
-`.grid('grid', 1000px, 400px, 4, 4, 10px);` With this you create a class wrapper named `.grid` that has a width of `1000px`
-and a height of `400px` with 16 items in them `4x4`.
+`.grid('grid', 100px, 100px, 4, 4, 10px);` With this you create a class wrapper named `.grid` that has a width of `100px`
+and a height of `100px` with 16 items in them `4x4`.
 
-
+### css
 	.grid {
 	  position: relative;
 	  width: 100px;
@@ -87,6 +87,63 @@ and a height of `400px` with 16 items in them `4x4`.
 	  top: 0px;
 	}
 
+### html
+	<div class="grid">
+	  <div class="s1 x0 y0"></div>
+	  <div class="s1 x1 y0"></div>
+	  <div class="s1 x2 y0"></div>
+	  <div class="s1 x3 y0"></div>
 
+	  <div class="s1 x0 y1"></div>
+	  <div class="s1 x1 y1"></div>
+	  <div class="s1 x2 y1"></div>
+	  <div class="s1 x3 y1"></div>
 
+	  <div class="s1 x0 y2"></div>
+	  <div class="s1 x1 y2"></div>
+	  <div class="s1 x2 y2"></div>
+	  <div class="s1 x3 y2"></div>
+
+	  <div class="s1 x0 y3"></div>
+	  <div class="s1 x1 y3"></div>
+	  <div class="s1 x2 y3"></div>
+	  <div class="s1 x3 y3"></div>
+	</div>
+
+	<div class="grid">
+	  <div class="s2 x0 y0"></div>
+	  <div class="s1 x2 y0"></div>
+	  <div class="s1 x3 y0"></div>
+
+	  <div class="s1 x2 y1"></div>
+	  <div class="s1 x3 y1"></div>
+
+	  <div class="s1 x0 y2"></div>
+	  <div class="s1 x1 y2"></div>
+	  <div class="s1 x2 y2"></div>
+	  <div class="s1 x3 y2"></div>
+
+	  <div class="s1 x0 y3"></div>
+	  <div class="s1 x1 y3"></div>
+	  <div class="s1 x2 y3"></div>
+	  <div class="s1 x3 y3"></div>
+	</div>
+
+	<div class="grid">
+	  <div class="s2 x0 y0"></div>
+	  <div class="s2 x2 y0"></div>
+
+	  <div class="s2 x0 y2"></div>
+	  <div class="s2 x2 y2"></div>
+	</div>
+
+	<div class="grid">
+	  <div class="w4 h2 x0 y0"></div>
+	  <div class="w4 h2 x0 y2"></div>
+	</div>
+
+	<div class="grid">
+	  <div class="w2 h4 x0 y0"></div>
+	  <div class="w2 h4 x2 y0"></div>
+	</div>
 
