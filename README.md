@@ -6,7 +6,7 @@ For creating grid layouts depending on your specifications. Using a very dynamic
 example
 ---------
 `.grid('grid', 1000px, 400px, 4, 4, 10px);` With this you create a class wrapper named `.grid` that has a width of `1000px`
-and a height of `400px` with 4 items in them.
+and a height of `400px` with 16 items in them `4x4`.
 
 
 	.grid {
