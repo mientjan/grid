@@ -24,7 +24,6 @@
 		.size(@index - 1);
 	}
 
-
 	.width (@index) when (@index > 0) {
 		.w@{index} {
 			width: @blockWidth * @index  + ( @margin * (@index - 1));
@@ -55,7 +54,6 @@
 		.y(@index - 1);
 	}
 
-
 	.@{name} {
 		position: relative;
 		width: @width;
@@ -68,5 +66,3 @@
 		.y(@y - 1);
 	}
 }
-
-	.grid(grid, 200px, 200px, 4, 4, 5px);
