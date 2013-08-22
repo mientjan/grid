@@ -14,7 +14,7 @@ and a height of `100px` with 16 items in them `4x4`.
 ![Example](https://github.com/mientjan/grid.less/raw/master/example/grid.less-example.png)
 
 
-### css
+### generated css
 	.grid {
 	  position: relative;
 	  width: 100px;
