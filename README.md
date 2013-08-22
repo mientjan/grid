@@ -93,61 +93,92 @@ and a height of `100px` with 16 items in them `4x4`.
 
 ### html
 	<div class="grid">
-	  <div class="s1 x0 y0"></div>
-	  <div class="s1 x1 y0"></div>
-	  <div class="s1 x2 y0"></div>
-	  <div class="s1 x3 y0"></div>
+	    <div class="s1 x0 y0"></div>
+	    <div class="s1 x1 y0"></div>
+	    <div class="s1 x2 y0"></div>
+	    <div class="s1 x3 y0"></div>
 
-	  <div class="s1 x0 y1"></div>
-	  <div class="s1 x1 y1"></div>
-	  <div class="s1 x2 y1"></div>
-	  <div class="s1 x3 y1"></div>
+	    <div class="s1 x0 y1"></div>
+	    <div class="s1 x1 y1"></div>
+	    <div class="s1 x2 y1"></div>
+	    <div class="s1 x3 y1"></div>
 
-	  <div class="s1 x0 y2"></div>
-	  <div class="s1 x1 y2"></div>
-	  <div class="s1 x2 y2"></div>
-	  <div class="s1 x3 y2"></div>
+	    <div class="s1 x0 y2"></div>
+	    <div class="s1 x1 y2"></div>
+	    <div class="s1 x2 y2"></div>
+	    <div class="s1 x3 y2"></div>
 
-	  <div class="s1 x0 y3"></div>
-	  <div class="s1 x1 y3"></div>
-	  <div class="s1 x2 y3"></div>
-	  <div class="s1 x3 y3"></div>
+	    <div class="s1 x0 y3"></div>
+	    <div class="s1 x1 y3"></div>
+	    <div class="s1 x2 y3"></div>
+	    <div class="s1 x3 y3"></div>
 	</div>
 
 	<div class="grid">
-	  <div class="s2 x0 y0"></div>
-	  <div class="s1 x2 y0"></div>
-	  <div class="s1 x3 y0"></div>
+	    <div class="s2 x0 y0"></div>
+	    <div class="s1 x2 y0"></div>
+	    <div class="s1 x3 y0"></div>
 
-	  <div class="s1 x2 y1"></div>
-	  <div class="s1 x3 y1"></div>
+	    <div class="s1 x2 y1"></div>
+	    <div class="s1 x3 y1"></div>
 
-	  <div class="s1 x0 y2"></div>
-	  <div class="s1 x1 y2"></div>
-	  <div class="s1 x2 y2"></div>
-	  <div class="s1 x3 y2"></div>
+	    <div class="s1 x0 y2"></div>
+	    <div class="s1 x1 y2"></div>
+	    <div class="s1 x2 y2"></div>
+	    <div class="s1 x3 y2"></div>
 
-	  <div class="s1 x0 y3"></div>
-	  <div class="s1 x1 y3"></div>
-	  <div class="s1 x2 y3"></div>
-	  <div class="s1 x3 y3"></div>
+	    <div class="s1 x0 y3"></div>
+	    <div class="s1 x1 y3"></div>
+	    <div class="s1 x2 y3"></div>
+	    <div class="s1 x3 y3"></div>
 	</div>
 
 	<div class="grid">
-	  <div class="s2 x0 y0"></div>
-	  <div class="s2 x2 y0"></div>
+	    <div class="w3 h2 x0 y0"></div>
+	    <div class="s1 x3 y0"></div>
+	    <div class="s1 x3 y1"></div>
 
-	  <div class="s2 x0 y2"></div>
-	  <div class="s2 x2 y2"></div>
+	    <div class="s1 x0 y2"></div>
+	    <div class="s1 x1 y2"></div>
+	    <div class="s1 x2 y2"></div>
+	    <div class="s1 x3 y2"></div>
+
+	    <div class="s1 x0 y3"></div>
+	    <div class="s1 x1 y3"></div>
+	    <div class="s1 x2 y3"></div>
+	    <div class="s1 x3 y3"></div>
+	</div>
+
+
+	<div class="grid">
+	    <div class="w3 h2 x0 y0"></div>
+	    <div class="s1 x3 y0"></div>
+	    <div class="s1 x3 y1"></div>
+
+	    <div class="w4 h1 x0 y2"></div>
+
+	    <div class="s1 x0 y3"></div>
+	    <div class="s1 x1 y3"></div>
+	    <div class="s1 x2 y3"></div>
+	    <div class="s1 x3 y3"></div>
 	</div>
 
 	<div class="grid">
-	  <div class="w4 h2 x0 y0"></div>
-	  <div class="w4 h2 x0 y2"></div>
+	    <div class="s2 x0 y0"></div>
+	    <div class="s2 x2 y0"></div>
+
+	    <div class="s2 x0 y2"></div>
+	    <div class="s2 x2 y2"></div>
+	</div>
+
+
+	<div class="grid">
+	    <div class="w4 h2 x0 y0"></div>
+	    <div class="w4 h2 x0 y2"></div>
 	</div>
 
 	<div class="grid">
-	  <div class="w2 h4 x0 y0"></div>
-	  <div class="w2 h4 x2 y0"></div>
+	    <div class="w2 h4 x0 y0"></div>
+	    <div class="w2 h4 x2 y0"></div>
 	</div>
 
