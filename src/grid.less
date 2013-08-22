@@ -1,0 +1,63 @@
+.grid(@name: 'grid', @width, @height, @x, @y, @margin: 0){
+
+	@minGrid: (1/2)*((@x + @y) - sqrt(pow(@x - @y,2)));
+	@maxGrid: (1/2)*((@x + @y) + sqrt(pow(@x - @y,2)));
+
+	@blockWidth: @width / @x - (@margin - @margin / @x);
+	@blockHeight: @height / @y - (@margin - @margin / @y);
+
+	.size (@index) when (@index > 0) {
+		.s@{index} {
+
+			width: @blockWidth * @index + ( @margin * (@index - 1));
+			height: @blockHeight * @index + ( @margin * (@index - 1));
+		}
+		.size(@index - 1);
+	}
+
+
+	.width (@index) when (@index > 0) {
+		.w@{index} {
+			width: @blockWidth * @index  + ( @margin * (@index - 1));
+		}
+		.width(@index - 1);
+	}
+
+	.height (@index) when (@index > 0) {
+		.h@{index} {
+			height: @blockHeight * @index  + ( @margin * (@index - 1));
+		}
+		.height(@index - 1);
+	}
+
+	.x (@index) when (@index > -1) {
+		.x@{index} {
+			position: absolute;
+			left: @blockWidth * @index + (@margin * @index);
+		}
+		.x(@index - 1);
+	}
+
+	.y (@index) when (@index > -1) {
+		.y@{index} {
+			position: absolute;
+			top: @blockHeight * @index + (@margin * @index);
+		}
+		.y(@index - 1);
+	}
+
+
+	.@{name} {
+		position: relative;
+		width: @width;
+		height: @height;
+
+		.size(@minGrid);
+		.width(@x);
+		.height(@y);
+		.x(@x - 1);
+		.y(@y - 1);
+	}
+}
+
+	.grid(grid, 300px, 300px, 10, 4, 10px);
