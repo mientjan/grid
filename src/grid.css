@@ -1,59 +1,59 @@
 .grid {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 400px;
 }
 .grid .s4 {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 400px;
 }
 .grid .s3 {
-  width: 72.5px;
-  height: 72.5px;
+  width: 148.75px;
+  height: 298.75px;
 }
 .grid .s2 {
-  width: 45px;
-  height: 45px;
+  width: 97.5px;
+  height: 197.5px;
 }
 .grid .s1 {
-  width: 17.5px;
-  height: 17.5px;
+  width: 46.25px;
+  height: 96.25px;
 }
 .grid .w4 {
-  width: 100px;
+  width: 200px;
 }
 .grid .w3 {
-  width: 72.5px;
+  width: 148.75px;
 }
 .grid .w2 {
-  width: 45px;
+  width: 97.5px;
 }
 .grid .w1 {
-  width: 17.5px;
+  width: 46.25px;
 }
 .grid .h4 {
-  height: 100px;
+  height: 400px;
 }
 .grid .h3 {
-  height: 72.5px;
+  height: 298.75px;
 }
 .grid .h2 {
-  height: 45px;
+  height: 197.5px;
 }
 .grid .h1 {
-  height: 17.5px;
+  height: 96.25px;
 }
 .grid .x3 {
   position: absolute;
-  left: 82.5px;
+  left: 153.75px;
 }
 .grid .x2 {
   position: absolute;
-  left: 55px;
+  left: 102.5px;
 }
 .grid .x1 {
   position: absolute;
-  left: 27.5px;
+  left: 51.25px;
 }
 .grid .x0 {
   position: absolute;
@@ -61,15 +61,15 @@
 }
 .grid .y3 {
   position: absolute;
-  top: 82.5px;
+  top: 303.75px;
 }
 .grid .y2 {
   position: absolute;
-  top: 55px;
+  top: 202.5px;
 }
 .grid .y1 {
   position: absolute;
-  top: 27.5px;
+  top: 101.25px;
 }
 .grid .y0 {
   position: absolute;
