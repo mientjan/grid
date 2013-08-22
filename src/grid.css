@@ -1,23 +1,23 @@
 .grid {
   position: relative;
   width: 200px;
-  height: 400px;
+  height: 200px;
 }
 .grid .s4 {
   width: 200px;
-  height: 400px;
+  height: 200px;
 }
 .grid .s3 {
   width: 148.75px;
-  height: 298.75px;
+  height: 148.75px;
 }
 .grid .s2 {
   width: 97.5px;
-  height: 197.5px;
+  height: 97.5px;
 }
 .grid .s1 {
   width: 46.25px;
-  height: 96.25px;
+  height: 46.25px;
 }
 .grid .w4 {
   width: 200px;
@@ -32,16 +32,16 @@
   width: 46.25px;
 }
 .grid .h4 {
-  height: 400px;
+  height: 200px;
 }
 .grid .h3 {
-  height: 298.75px;
+  height: 148.75px;
 }
 .grid .h2 {
-  height: 197.5px;
+  height: 97.5px;
 }
 .grid .h1 {
-  height: 96.25px;
+  height: 46.25px;
 }
 .grid .x3 {
   position: absolute;
@@ -61,15 +61,15 @@
 }
 .grid .y3 {
   position: absolute;
-  top: 303.75px;
+  top: 153.75px;
 }
 .grid .y2 {
   position: absolute;
-  top: 202.5px;
+  top: 102.5px;
 }
 .grid .y1 {
   position: absolute;
-  top: 101.25px;
+  top: 51.25px;
 }
 .grid .y0 {
   position: absolute;
