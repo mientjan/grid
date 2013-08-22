@@ -4,6 +4,8 @@ grid.less
 For creating grid layouts depending on your specifications. Using a very dynamic mixin for creating grid css'sss.
 You can use any unit size (px,%,vw) and it will adjust it self to that size.
 
+Compatible with less 1.4 >
+
 example
 ---------
 `.grid('grid', 100px, 100px, 4, 4, 10px);` With this you create a class wrapper named `.grid` that has a width of `100px`
