@@ -1,101 +1,59 @@
 .grid {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 .grid .s4 {
-  width: 114px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
 .grid .s3 {
-  width: 83px;
-  height: 222.5px;
+  width: 72.5px;
+  height: 72.5px;
 }
 .grid .s2 {
-  width: 52px;
-  height: 145px;
+  width: 45px;
+  height: 45px;
 }
 .grid .s1 {
-  width: 21px;
-  height: 67.5px;
-}
-.grid .w10 {
-  width: 300px;
-}
-.grid .w9 {
-  width: 269px;
-}
-.grid .w8 {
-  width: 238px;
-}
-.grid .w7 {
-  width: 207px;
-}
-.grid .w6 {
-  width: 176px;
-}
-.grid .w5 {
-  width: 145px;
+  width: 17.5px;
+  height: 17.5px;
 }
 .grid .w4 {
-  width: 114px;
+  width: 100px;
 }
 .grid .w3 {
-  width: 83px;
+  width: 72.5px;
 }
 .grid .w2 {
-  width: 52px;
+  width: 45px;
 }
 .grid .w1 {
-  width: 21px;
+  width: 17.5px;
 }
 .grid .h4 {
-  height: 300px;
+  height: 100px;
 }
 .grid .h3 {
-  height: 222.5px;
+  height: 72.5px;
 }
 .grid .h2 {
-  height: 145px;
+  height: 45px;
 }
 .grid .h1 {
-  height: 67.5px;
-}
-.grid .x9 {
-  position: absolute;
-  left: 279px;
-}
-.grid .x8 {
-  position: absolute;
-  left: 248px;
-}
-.grid .x7 {
-  position: absolute;
-  left: 217px;
-}
-.grid .x6 {
-  position: absolute;
-  left: 186px;
-}
-.grid .x5 {
-  position: absolute;
-  left: 155px;
-}
-.grid .x4 {
-  position: absolute;
-  left: 124px;
+  height: 17.5px;
 }
 .grid .x3 {
   position: absolute;
-  left: 93px;
+  left: 82.5px;
 }
 .grid .x2 {
   position: absolute;
-  left: 62px;
+  left: 55px;
 }
 .grid .x1 {
   position: absolute;
-  left: 31px;
+  left: 27.5px;
 }
 .grid .x0 {
   position: absolute;
@@ -103,15 +61,15 @@
 }
 .grid .y3 {
   position: absolute;
-  top: 232.5px;
+  top: 82.5px;
 }
 .grid .y2 {
   position: absolute;
-  top: 155px;
+  top: 55px;
 }
 .grid .y1 {
   position: absolute;
-  top: 77.5px;
+  top: 27.5px;
 }
 .grid .y0 {
   position: absolute;

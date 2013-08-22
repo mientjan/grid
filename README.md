@@ -10,60 +10,61 @@ and a height of `400px` with 16 items in them `4x4`.
 
 
 	.grid {
-	  width: 1000px;
-	  height: 400px;
+	  position: relative;
+	  width: 100px;
+	  height: 100px;
 	}
 	.grid .s4 {
-	  width: 1030px;
-	  height: 430px;
+	  width: 100px;
+	  height: 100px;
 	}
 	.grid .s3 {
-	  width: 770px;
-	  height: 320px;
+	  width: 72.5px;
+	  height: 72.5px;
 	}
 	.grid .s2 {
-	  width: 510px;
-	  height: 210px;
+	  width: 45px;
+	  height: 45px;
 	}
 	.grid .s1 {
-	  width: 250px;
-	  height: 100px;
+	  width: 17.5px;
+	  height: 17.5px;
 	}
 	.grid .w4 {
-	  width: 1030px;
+	  width: 100px;
 	}
 	.grid .w3 {
-	  width: 770px;
+	  width: 72.5px;
 	}
 	.grid .w2 {
-	  width: 510px;
+	  width: 45px;
 	}
 	.grid .w1 {
-	  width: 250px;
+	  width: 17.5px;
 	}
 	.grid .h4 {
-	  height: 430px;
+	  height: 100px;
 	}
 	.grid .h3 {
-	  height: 320px;
+	  height: 72.5px;
 	}
 	.grid .h2 {
-	  height: 210px;
+	  height: 45px;
 	}
 	.grid .h1 {
-	  height: 100px;
+	  height: 17.5px;
 	}
 	.grid .x3 {
 	  position: absolute;
-	  left: 780px;
+	  left: 82.5px;
 	}
 	.grid .x2 {
 	  position: absolute;
-	  left: 520px;
+	  left: 55px;
 	}
 	.grid .x1 {
 	  position: absolute;
-	  left: 260px;
+	  left: 27.5px;
 	}
 	.grid .x0 {
 	  position: absolute;
@@ -71,20 +72,21 @@ and a height of `400px` with 16 items in them `4x4`.
 	}
 	.grid .y3 {
 	  position: absolute;
-	  top: 330px;
+	  top: 82.5px;
 	}
 	.grid .y2 {
 	  position: absolute;
-	  top: 220px;
+	  top: 55px;
 	}
 	.grid .y1 {
 	  position: absolute;
-	  top: 110px;
+	  top: 27.5px;
 	}
 	.grid .y0 {
 	  position: absolute;
 	  top: 0px;
 	}
+
 
 
 
