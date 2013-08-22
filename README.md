@@ -11,6 +11,7 @@ example
 `.grid('grid', 100px, 100px, 4, 4, 10px);` With this you create a class wrapper named `.grid` that has a width of `100px`
 and a height of `100px` with 16 items in them `4x4`.
 
+###### these are just the small amount of structures you can create with this `mixin`
 ![Example](https://github.com/mientjan/grid.less/raw/master/example/grid.less-example.png)
 
 
