@@ -2,7 +2,7 @@ grid.less
 =========
 
 For creating grid layouts depending on your specifications. Using a very dynamic mixin for creating grid css'sss.
-You can use any unit size (px,%,vw) and it will adjust it self to the size.
+You can use any unit size (px,%,vw) and it will adjust it self to that size.
 
 example
 ---------
