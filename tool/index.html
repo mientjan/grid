@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="../example/example.css"/>
+
+    <script>
+        function add(){
+            var grid = document.getElementsByClassName('grid')[0];
+
+            var div = document.createElement('div');
+            div.className = 'h1 w1 fl-l';
+            console.log(grid);
+            grid.appendChild(div);
+
+            var grid = [];
+        }
+    </script>
+</head>
+<body>
+    <div class="grid">
+
+    </div>
+
+    <button onclick="add()">
+        add
+    </button>
+
+</body>
+</html>

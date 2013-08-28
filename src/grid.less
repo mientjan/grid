@@ -54,15 +54,72 @@
 		.y(@index - 1);
 	}
 
+	.fl-l (@index) when (@index > 0) {
+		@index2: @index - 1;
+		@ymod: floor(@index2 / @x);
+		@xmod: mod(@index2,@x);
+
+		.fl-l:nth-child(@{index}) {
+			z-index: @index;
+			margin: @xmod;
+			padding: @ymod;
+			top: @blockHeight * @ymod + (@margin * @ymod);
+			left: @blockHeight * @xmod + (@margin * @xmod);
+		}
+		.fl-l(@index - 1);
+	}
+
+	.fl-r (@index) when (@index > 0) {
+		@index2: @index - 1;
+		@ymod: floor(@index2 / @x);
+		@xmod: mod(@index2,@x);
+
+		.fl-r:nth-child(@{index}) {
+			top: @blockHeight * @ymod + (@margin * @ymod);
+			right: @blockHeight * @xmod + (@margin * @xmod);
+		}
+		.fl-r(@index - 1);
+	}
+
+
+	.fl-y (@index) when (@index > 0) {
+		@index2: @index - 1;
+		@ymod: mod(@index2,@y);
+		@xmod: floor(@index2 / @y);
+
+		.fl-y:nth-child(@{index}) {
+			top: @blockHeight * @ymod + (@margin * @ymod);
+			left: @blockHeight * @xmod + (@margin * @xmod);
+		}
+		.fl-y(@index - 1);
+	}
+
 	.@{name} {
 		position: relative;
 		width: @width;
-		height: @height;
+
+		.height-check(@height) when not(ispercentage(@height)) {
+			height: @height;
+		}
+
+		.height-check(@height) when (ispercentage(@height)) {
+			padding-top: @height;
+		}
+
+		.height-check(@height);
 
 		.size(@minGrid);
 		.width(@x);
 		.height(@y);
 		.x(@x - 1);
 		.y(@y - 1);
+
+		.fl-l { position: absolute; }
+		.fl-r { position: absolute; }
+		.fl-y { position: absolute; }
+		.fl-l(@y * @x);
+		.fl-r(@y * @x);
+		.fl-y(@y * @x);
+
 	}
 }
