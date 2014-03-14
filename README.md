@@ -1,10 +1,10 @@
-grid.less
+grid (less / sass)
 =========
 
 For creating grid layouts depending on your specifications. Using a very dynamic mixin for creating grid css'sss.
 You can use any unit size (px,%,vw) and it will adjust it self to that size.
 
-Compatible with less 1.4 >
+Compatible with less 1.4 > and Sass
 
 example
 ---------
