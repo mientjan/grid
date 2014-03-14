@@ -1,0 +1,208 @@
+
+/**
+ * grid.sass
+ * --------------------------------------------------------
+ * license: GNU GENERAL PUBLIC LICENSE Version 2, June 1991.
+ * author: Mient-jan Stelling <mientjan.stelling$gmail.com>
+ * copyright: Copyright (c) 2013 Mient-jan Stelling
+ * requires: less 1.4 >
+ */
+
+//$mixin bg-clip ($type: border-box) { // ( border-box | padding-box | content-box )
+//	-webkit-background-clip: $type;
+//	background-clip: $type;
+//}
+
+@mixin grid($name: grid, $width: 100px, $height: 100px, $x: 10, $y: 10, $margin: 0 ){
+
+	$minGrid: min($x,$y);
+	$maxGrid: max($x,$y);
+//	$unitType: unit($width);
+
+	$blockWidth: $width / $x - ($margin - $margin / $x);
+	$blockHeight: $height / $y - ($margin - $margin / $y);
+
+
+	.#{$name} {
+
+		position: relative;
+
+		width: $width;
+		height: $height;
+
+		// size
+		@for $i from 0 through $minGrid {
+			.s#{$i} {
+				position: absolute;
+				width: #{$blockWidth * $i + ( $margin * ($i - 1))};
+				height: #{$blockHeight * $i + ( $margin * ($i - 1))};
+			}
+		}
+
+		// width
+		@for $i from 0 through $x {
+			.w#{$i} {
+				position: absolute;
+				width: #{$blockWidth * $i + ( $margin * ($i - 1))};
+			}
+		}
+
+		// height
+		@for $i from 0 through $x {
+			.h#{$i} {
+				position: absolute;
+				height: #{$blockHeight * $i + ( $margin * ($i - 1))};
+			}
+		}
+
+		// x
+		$x2: $x - 1;
+		@for $i from 0 through $x2 {
+			.x#{$i} {
+				left: $blockWidth * $i + ($margin * $i);
+			}
+		}
+
+		// y
+		$y2: $y - 1;
+		@for $i from 0 through $y2 {
+			.y#{$i} {
+				top: $blockHeight * $i + ($margin * $i);
+			}
+		}
+	}
+}
+
+		//	.x ($index) when ($index > -1) {
+		//		.x@{index} {
+		//			position: absolute;
+		//			left: $blockWidth * $index + ($margin * $index);
+		//		}
+		//		.x($index - 1);
+		//	}
+		//
+		//	.y ($index) when ($index > -1) {
+		//		.y@{index} {
+		//			position: absolute;
+		//			top: $blockHeight * $index + ($margin * $index);
+		//		}
+		//		.y($index - 1);
+		//	}
+
+
+//
+//
+//	.size ($index) when ($index > 0) {
+//		.s@{index} {
+//
+//			width: $blockWidth * $index + ( $margin * ($index - 1));
+//			height: $blockHeight * $index + ( $margin * ($index - 1));
+//		}
+//		.size($index - 1);
+//	}
+//
+//	.width ($index) when ($index > 0) {
+//		.w@{index} {
+//			width: $blockWidth * $index  + ( $margin * ($index - 1));
+//		}
+//		.width($index - 1);
+//	}
+//
+//	.height ($index) when ($index > 0) {
+//		.h@{index} {
+//			height: $blockHeight * $index  + ( $margin * ($index - 1));
+//		}
+//		.height($index - 1);
+//	}
+//
+//	.x ($index) when ($index > -1) {
+//		.x@{index} {
+//			position: absolute;
+//			left: $blockWidth * $index + ($margin * $index);
+//		}
+//		.x($index - 1);
+//	}
+//
+//	.y ($index) when ($index > -1) {
+//		.y@{index} {
+//			position: absolute;
+//			top: $blockHeight * $index + ($margin * $index);
+//		}
+//		.y($index - 1);
+//	}
+//
+//	.fl-l ($index) when ($index > 0) {
+//		$index2: $index - 1;
+//		$ymod: floor($index2 / $x);
+//		$xmod: mod($index2,$x);
+//
+//		.fl-l:nth-child(@{index}),
+//		.fl-l.i@{index} {
+//			z-index: $index;
+//			margin: $xmod;
+//			padding: $ymod;
+//			top: $blockHeight * $ymod + ($margin * $ymod);
+//			left: $blockHeight * $xmod + ($margin * $xmod);
+//		}
+//		.fl-l($index - 1);
+//	}
+//
+//	.fl-r ($index) when ($index > 0) {
+//		$index2: $index - 1;
+//		$ymod: floor($index2 / $x);
+//		$xmod: mod($index2,$x);
+//
+//		.fl-r:nth-child(@{index}),
+//		.fl-r.i@{index}
+//		{
+//			top: $blockHeight * $ymod + ($margin * $ymod);
+//			right: $blockHeight * $xmod + ($margin * $xmod);
+//		}
+//		.fl-r($index - 1);
+//	}
+//
+//	.fl-y ($index) when ($index > 0) {
+//		$index2: $index - 1;
+//		$ymod: mod($index2,$y);
+//		$xmod: floor($index2 / $y);
+//
+//		.fl-y:nth-child(@{index}),
+//		.fl-y.i@{index} {
+//			top: $blockHeight * $ymod + ($margin * $ymod);
+//			left: $blockHeight * $xmod + ($margin * $xmod);
+//		}
+//		.fl-y($index - 1);
+//	}
+//
+//	.@{name} {
+//		position: relative;
+//		width: $width;
+//
+//		.height-check($height) when not(ispercentage($height)) {
+//			height: $height;
+//		}
+//
+//		.height-check($height) when (ispercentage($height)) {
+//			padding-top: $height;
+//		}
+//
+//		.height-check($height);
+//
+//		.size($minGrid);
+//		.width($x);
+//		.height($y);
+//		.x($x - 1);
+//		.y($y - 1);
+//
+//		.float($useFloat) when ($useFloat = true){
+//			.fl-l { position: absolute; }
+//			.fl-r { position: absolute; }
+//			.fl-y { position: absolute; }
+//			.fl-l($y * $x);
+//			.fl-r($y * $x);
+//			.fl-y($y * $x);
+//		}
+//
+//		.float($useFloat);
+//
+//	}
